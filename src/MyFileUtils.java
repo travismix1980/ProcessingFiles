@@ -1,8 +1,12 @@
+import com.travis.exceptions.FooRuntimeException;
+
 public class MyFileUtils {
-    public static int subtractTenFromLargerNumber(int number) throws Exception{
+    public int subtractTenFromLargerNumber(int number) throws Exception{
         if(number < 10){
-            throw new Exception("Number less than 10");
+            throw new FooRuntimeException("Number less than 10");
         }
         return number - 10;
     }
 }
+
+

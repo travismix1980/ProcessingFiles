@@ -20,7 +20,8 @@ public class Application {
             e.printStackTrace();
         }
 
-        System.out.println(MyFileUtils.subtractTenFromLargerNumber(12));
-        System.out.println(MyFileUtils.subtractTenFromLargerNumber(8));
+        MyFileUtils myUtil = new MyFileUtils();
+        System.out.println(myUtil.subtractTenFromLargerNumber(12));
+        System.out.println(myUtil.subtractTenFromLargerNumber(8));
     }
 }
